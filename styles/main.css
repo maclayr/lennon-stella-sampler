@@ -1,0 +1,80 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.vcenter-item{
+    display: flex;
+    align-items: center;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.02); /* (150% zoom)*/
+}
+
+#albumCover{
+  border-radius: 0;
+}
+
+#albumCover:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.playerImg{
+  max-height: 4em;
+  margin: 1.5em;
+}
+
+.mediaPlayer {
+  position: static;
+  left: 50%;
+  bottom: 0px;
+  transform: translate(-50%, -30%);
+  margin: 0 auto;
+  padding: 3px;
+  max-width: 120%;
+  min-width: 100%;
+}
+
+ .albumCover {
+  cursor: pointer;
+}
+
+.btn-close {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  background: #fff;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 150ms;
+}
+
+.h-5 {
+  height: 5%;
+}
+
+.bg-transparent-light {
+  background: rgba(248, 249, 250, 0.75);
+  border: .5px solid rgba(217, 218, 219, 0.8);
+  border-radius: 3px;
+}
+
+#aboutText {
+  font-size: 1em;
+  text-align: center;
+}
+
+#moreAbout {
+  max-width: 70%;
+}

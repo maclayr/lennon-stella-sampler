@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lennon Stella Music Sampler</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+
+  <div class="container-flex"><!-- Header -->
+    <div class="row-cols-2 p-5 vcenter-item justify-content-between" style="background:transparent url('images/leannonheader2.jpg') no-repeat top center /cover; height:600px;">
+      <div class="bg-transparent-light col-12 col-md-5 p-2 px-4 justify-content-center text-center shadow">
+        <h1>Lennon Stella</h1>
+        <p>Lennon Stella is Canadian singer/songwriter and actress. Her fame began with her role as Maddie Conrad on the musical-drama show Nashville. In her early career, Lennon Stella performed with her younger sister Maisy Stella as the duo Lennon
+          & Maisy. In 2018, she went solo with her debut EP <em>Love, Me</em>. She has since released a studio album <em>Three. Two. One.</em> as well as numerous singles.</p>
+        <div class="row text-center justify-content-center">
+          <a href="#moreAbout" class="btn btn-secondary m-3" data-target="#moreAbout">More About Artist</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-flex"><!-- Albums -->
+
+    <div class="d-flex flex-column justify-content-center align-middle text-center mt-3">
+      <h2>Albums</h2>
+      <p><em>Click on an album to play a sample!</em></p>
+    </div>
+
+    <div class="row py-3 mx-3 justify-content-center">
+      <!-- ALBUMS -->
+
+      <div class="col-12 col-md-6 col-lg-6 col-xl-3 zoom">
+        <div class="card bg-dark text-white m-3 pt-4 shadow">
+          <img class="card-img-top mx-auto albumCover" src="images/threetwoone.jpg" alt="threetwoonecover" id="threetwooneImg" style="max-width:80%;">
+          <div class="card-body pl-4">
+            <h5 class="card-title">Three. Two. One.</h5>
+            <p class="card-text" style="line-height: .7;"><small class="text-muted">Album • 2020</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6 col-xl-3 zoom">
+        <div class="card bg-dark text-white m-3 pt-4 shadow">
+          <img class="card-img-top mx-auto albumCover" src="images/fancy.jpg" alt="fancycover" id="fancyImg" style="max-width:80%;">
+          <div class="card-body pl-4">
+            <h5 class="card-title">Fancy</h5>
+            <p class="card-text" style="line-height: .7;"><small class="text-muted">Single • 2021</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6 col-xl-3 zoom">
+        <div class="card bg-dark text-white m-3 pt-4 shadow">
+          <img class="card-img-top mx-auto albumCover" src="images/badacoustic.jpg" alt="Card image cap" id="badImg" style="max-width: 80%;">
+          <div class="card-body pl-4">
+            <h5 class="card-title">Bad(Acoustic)</h5>
+            <p class="card-text" style="line-height: .7;"><small class="text-muted">Single • 2020</small></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6 col-xl-3 zoom">
+        <div class="card bg-dark text-white m-3 pt-4 shadow">
+          <img class="card-img-top mx-auto albumCover" src="images/loveme.jpg" alt="ladidacover" id="loveMeImg" style="max-width:80%;">
+          <div class="card-body pl-4">
+            <h5 class="card-title">Love, Me</h5>
+            <p class="card-text" style="line-height: .7; color:#fff;"><small class="text-muted">EP • 2018</small></p>
+          </div>
+        </div>
+      </div>
+
+    </div> <!-- END ALBUMS -->
+
+  </div> <!-- END ALBUMS -->
+
+  <div class="container-flex fixed-bottom p-3" id="mediaPlayerContainer"><!-- Media Player-->
+    <div class="mx-1 d-flex justify-content-center">
+
+      <div class="card text-white bg-dark shadow mediaCard" id="threetwooneCard">
+        <div class="d-flex flex-row-reverse justify-content-right h-5">
+          <button type="button" class="btn-close m-1 text-center" onclick="closeButton1()">✖</button>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <img src="images/threetwoone.jpg" alt="cover" class="playerImg mr-2">
+          <div class="p-2">
+            <h5 class="card-title">Golf on Tv</h5>
+            <p class="card-text text-nowrap" style="line-height: .5;"><small class="text-muted">Three. Two. One.</small></p>
+          </div>
+          <audio controls preload="auto" class="m-3 song">
+            <source src="audio/golfontv.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      </div>
+
+      <div class="card text-white bg-dark shadow mediaCard" id="fancyCard">
+        <div class="d-flex flex-row-reverse justify-content-right h-5">
+          <button type="button" class="btn-close m-1 text-center" onclick="closeButton2()">✖</button>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <img src="images/fancy.jpg" alt="fancycover" class="playerImg mr-2">
+          <div class="p-2">
+            <h5 class="card-title">Fancy</h5>
+            <p class="card-text text-nowrap" style="line-height: .5;"><small class="text-muted">Fancy (Single)</small></p>
+          </div>
+          <audio controls preload="auto" class="m-3 song">
+            <source src="audio/fancy.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      </div>
+
+      <div class="card text-white bg-dark shadow mediaCard" id="badCard">
+        <div class="d-flex flex-row-reverse justify-content-right h-5">
+          <button type="button" class="btn-close m-1 text-center" onclick="closeButton3()">✖</button>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <img src="images/badacoustic.jpg" alt="cover" class="playerImg mr-2">
+          <div class="p-2">
+            <h5 class="card-title">Bad - Acoustic</h5>
+            <p class="card-text text-nowrap" style="line-height: .5;"><small class="text-muted">Bad(Acoustic) (Single)</small></p>
+          </div>
+          <audio controls preload="auto" class="m-3 song">
+            <source src="audio/bad.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      </div>
+
+      <div class="card text-white bg-dark shadow mediaCard" id="loveMeCard">
+        <div class="d-flex flex-row-reverse justify-content-right h-5">
+          <button type="button" class="btn-close m-1 text-center" onclick="closeButton4()">✖</button>
+        </div>
+        <div class="d-flex flex-row justify-content-center align-items-center">
+          <img src="images/loveme.jpg" alt="fancycover" class="playerImg mr-2">
+          <div class="p-2">
+            <h5 class="card-title">La Di Da</h5>
+            <p class="card-text text-nowrap" style="line-height: .5;"><small class="text-muted">Love, Me</small></p>
+          </div>
+          <audio controls preload="auto" class="m-3 song">
+            <source src="audio/ladida.mp3" type="audio/mp3">
+          </audio>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- END MEDIA PLAYER -->
+
+
+  <div class="container-flex"><!-- About Artist -->
+
+    <div class="d-flex justify-content-center card shadow p-4 px-5 mx-auto mt-4" id="moreAbout">
+
+      <h2 class="text-center">About Lennon Stella</h2>
+
+      <p class="text-left" id="aboutText">
+        "Lennon Stella first rose to popularity when she was just 12 years old as part of the duo Lennon & Maisy, alongside her younger sister, and gained national attention with a cover of Robyn’s “Call Your Girlfriend.” Lennon went on to star in the
+        ABC/CMT smash Nashville as Maddie Conrad for six years. Kickstarting her solo recording career, her 2018 Love, me EP, which bowed in the Top 5 of the Billboard “Heatseekers Albums” chart, that included the single “La Di Da,” amassing more
+        than 149 million Spotify streams and counting. Lennon was named among Refinery29’s “Young Celebrities to Watch in 2019” and Amazon Music’s Artist to Watch for 2020. Following multiple nominations and her win for “Breakthrough Artist of the
+        Year” at the 2020 Juno Awards, Lennon is nominated for three 2021 Juno Awards, including “Juno Fan Choice,” “Single of the Year” and “Pop Album of the Year”. <br><br>
+
+        Lennon spent most of 2019 and 2020 selling out dates on her headline tour that went throughout North America, Europe and the UK. She also toured with Anne-Marie, The Chainsmokers and 5SOS. Lennon released her highly anticipated debut album
+        Three. Two. One. via Columbia Records/RECORDS LLC including standout tracks “Kissing Other People” and “Jealous” as well as a solo version of Lennon’s song “Golf on TV” with JP Saxe. Three. Two. One. was named one of Vulture’s ‘Best Albums -
+        Spring 2020’ with the publication declaring: 'Stella’s solo debut [Three. Two. One.] proves her mettle in a pop field of play.'"
+      </p>
+
+      <a href="https://open.spotify.com/artist/1cZQSpDsxgKIX2yW5OR9Ot">"Source: Spotify About Lennon Stella"</a>
+
+    </div>
+
+  </div>
+
+  <div class="container-flex"><!-- Page Credits -->
+
+    <div class="m-5" id="accordion">
+      <div class="card">
+        <div class="card-header text-center" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Page Credits
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            <ul>
+              <li><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/">Bootstrap design elements</a></li>
+              <li><a href="http://jsfiddle.net/macloo/p24vrczo/">Javascript switch code for music player by Prof. Mindy Mcadams</a></li>
+              <li><a href="https://www.w3schools.com/howto/howto_js_toggle_hide_show.asp">Close button Javascript</a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="bg-light text-center text-lg-start">
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      Page Author: <b>Maclay Ramsey</b>
+      <a class="text-dark" href="https://github.com/maclayr"> | My GitHub </a>
+      <a class="text-dark" href="https://github.com/maclayr/music-sampler/tree/gh-pages">| This Page's GitHub repo </a>
+      <a class="text-dark" href="https://maclayramsey.wixsite.com/home">| Portfolio Website </a>
+    </div>
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  <script src="scripts/main.js"></script>
+
+</body>
+
+</html>
